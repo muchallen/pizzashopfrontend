@@ -12,7 +12,7 @@ export class ProductService {
   cartProducts=[]
   cartTotal=0
   allroducts:[]=[]
-  rootUrl = 'http://localhost:8095/api/v1/products'
+  rootUrl = 'https://pizzashop33.herokuapp.com/api/v1/products'
 
   constructor() {
     this.getTotal()

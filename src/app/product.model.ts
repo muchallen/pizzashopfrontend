@@ -3,6 +3,6 @@ id:number;
 pName:String;
 pDescription:String;
 pImage:String;
-pPrice:String
+pPrice:number;
 pQuantity:number
 }
