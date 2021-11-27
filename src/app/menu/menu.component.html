@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span class="flaticon-pizza-1 mr-1"></span>Pizza<br><small>Delicous</small></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span> Menu
+    </button>
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item "><a routerLink="/" class="nav-link">Home</a></li>
+        
+        <li class="nav-item"><a routerLink="/services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a routerLink="/cart" class="nav-link">Cart</a></li>
+        <li class="nav-item active"><a routerLink="/checkout" class="nav-link">Checkout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="row d-flex justify-content-center">
+  <div class="payment-form col-md-5 my-5">
+    <form action="" style="width: 70% ">
+      <div class="form-group">
+      
+        <input type="text" class="form-control" name="fullname" placeholder="fullname">
+      </div>
+      <div class="form-group">
+        
+        <input type="text" class="form-control" name="address" placeholder="address">
+      </div>
+      <div class="form-group">
+        
+        <input type="text" class="form-control" name="cellnumber" placeholder="cell number">
+      </div>
+  
+      <div class="form-group">
+        <label for="payementmethod">Payement Method</label>
+        <select class="form-control" name="">
+          <option class="text-secondary">PayPal</option>
+          <option class="text-secondary">Mastercard</option>
+          <option class="text-secondary">Ecocash</option>
+        </select>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-5 align-self-center">
+    <div class="total-container d-flex justify-content-start ml-4   ">
+      <div class="w-20 " style="align-self: end;margin-bottom: 5em ;border: 1px solid #fd7e14;; padding: 2em;">
+       <h5 style="color: #fd7e14;">Subtotal : ${{cartTotal}}</h5>
+       <h5 style="color: #fd7e14;">Vat at 10% : ${{vat}}</h5>
+       <h5 style="color: #fd7e14;">Grand Total : ${{grandTotal}}</h5>
+       <br>
+       <a href="#" style="width: 80%" class="ml-2 btn btn-white btn-outline-white">Pay</a>
+      </div>
+     </div>
+  </div>
+</div>
